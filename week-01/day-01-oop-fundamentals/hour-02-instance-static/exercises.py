@@ -325,7 +325,9 @@
 #             return Temperature.celsius_to_fahrenheit(self.value)
 #         return Temperature.celsius_to_fahrenheit(Temperature.kelvin_to_celsius(self.value))
 #     def to_kelvin(self):
-#         if self.unit=="C":
+#          if self.unit=="K":
+#             return self.value
+#          if self.unit=="C":
 #             return Temperature.celsius_to_kelvin(self.value)
 #         return Temperature.celsius_to_kelvin(Temperature.fahrenheit_to_celsius(self.value))
 #     @staticmethod
